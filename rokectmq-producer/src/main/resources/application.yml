@@ -1,0 +1,20 @@
+server:
+  port: 7982
+
+spring:
+  application:
+    name: rocketmq
+  cloud:
+    nacos:
+      discovery:
+        server‐addr: 39.107.93.94:8848
+
+rocketmq:
+#  name-server: 118.190.244.217:9876
+  name-server: 39.107.93.94:9876
+#  nameServer: 127.0.0.1:9876
+    #  extNameServer: 127.0.0.1:9876
+  producer:
+    send-message-timeout: 300000
+    group: rocketmq-group
+
