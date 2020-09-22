@@ -3,11 +3,12 @@ server:
 
 spring:
   application:
-    name: rocketmq
+    name: producer
   cloud:
     nacos:
       discovery:
         server‐addr: 39.107.93.94:8848
+        namespace: c7297287-2583-478f-8ec3-6fcaaad3a294
 
 rocketmq:
 #  name-server: 118.190.244.217:9876

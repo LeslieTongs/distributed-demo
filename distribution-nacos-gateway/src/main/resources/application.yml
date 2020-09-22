@@ -4,10 +4,6 @@ server:
 spring:
   application:
     name: gateway
-  cloud:
-    nacos:
-      discovery:
-        server‐addr: 39.107.93.94:8848
 
     gateway:
       discovery:
@@ -15,3 +11,13 @@ spring:
           #让gateway通过服务发现组件找到其他的微服务
           enabled: true
 
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.107.93.94:8848
+        namespace: c7297287-2583-478f-8ec3-6fcaaad3a294
+      gateway:
+        route:
+          config:
+            group: DEFAULT_GROUP
+            data-id: gateway-router

@@ -1,4 +1,4 @@
-package com.example.consumer;
+package com.example.consumer.mq;
 
 import org.apache.rocketmq.spring.annotation.MessageModel;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
