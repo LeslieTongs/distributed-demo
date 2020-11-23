@@ -33,11 +33,9 @@ public class DynamicRouteServiceImplByNacos {
 
     @PostConstruct
     public void init() {
-        System.out.println("gateway route init...");
         try{
             configService = initConfigService();
             if(configService == null){
-                System.out.println("initConfigService fail");
                 return;
             }
             String configInfo = configService.getConfig(GatewayConfig.NACOS_ROUTE_DATA_ID, GatewayConfig.NACOS_ROUTE_GROUP, GatewayConfig.DEFAULT_TIMEOUT);
